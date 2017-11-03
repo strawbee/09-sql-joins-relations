@@ -52,8 +52,8 @@ app.post('/articles', (request, response) => {
   )
 
   function queryTwo() {
-    // TODO: Write a SQL query to retrieve the author_id from the authors table for the new article.
-    // TODO: In the provided array, add the author name as data for the SQL query.
+    // DONE: Write a SQL query to retrieve the author_id from the authors table for the new article.
+    // DONE: In the provided array, add the author name as data for the SQL query.
     client.query(
       `SELECT author_id FROM authors WHERE author = $1`,
       [
