@@ -199,7 +199,7 @@ function loadArticles() {
 }
 
 // REVIEW: Below are two queries, wrapped in the loadDB() function, which create separate tables in our DB, and create a relationship between the authors and articles tables.
-// THEN they load their respective data from our JSON file.
+// THEN they load their respective data from our JSON file
 function loadDB() {
   client.query(`
     CREATE TABLE IF NOT EXISTS
