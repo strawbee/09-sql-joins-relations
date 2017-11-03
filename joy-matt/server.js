@@ -52,8 +52,8 @@ app.post('/articles', (request, response) => {
   )
 
   function queryTwo() {
-    // DONE: Write a SQL query to retrieve the author_id from the authors table for the new article.
-    // DONE: In the provided array, add the author name as data for the SQL query.
+    // TODO: Write a SQL query to retrieve the author_id from the authors table for the new article.
+    // TODO: In the provided array, add the author name as data for the SQL query.
     client.query(
       `SELECT author_id FROM authors WHERE author = $1`,
       [
@@ -199,7 +199,7 @@ function loadArticles() {
 }
 
 // REVIEW: Below are two queries, wrapped in the loadDB() function, which create separate tables in our DB, and create a relationship between the authors and articles tables.
-// THEN they load their respective data from our JSON file
+// THEN they load their respective data from our JSON file.
 function loadDB() {
   client.query(`
     CREATE TABLE IF NOT EXISTS
